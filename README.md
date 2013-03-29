@@ -15,3 +15,6 @@ Sublime Text2 一键添加注释插件
  
 目前只支持js,css,py后缀的文件
 
+### 配置
+
+Preferences -> Package Settings -> AutoComments
