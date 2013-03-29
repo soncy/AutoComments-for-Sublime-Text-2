@@ -3,7 +3,7 @@ Sublime Text2 一键添加注释插件
 
 一键(默认快捷键，osx：command+shif+/，其他: ctrl+shift+/)自动为js，css和py文件开始增加一段注释，如下：
 
->
+
 	/*
      * Created with Sublime Text 2.
 	 * User: song.chen
@@ -11,7 +11,7 @@ Sublime Text2 一键添加注释插件
 	 * Time: 12:00:41
 	 * Contact: song.chen@qunar.com
 	 */
- 
+
  
 目前只支持js,css,py后缀的文件
 
@@ -20,8 +20,8 @@ Sublime Text2 一键添加注释插件
 可以通过下面两种方式安装  
 
 1. 到你的Sublime Text2 的Packages目录下，运行
->
-	git clone git://github.com/soncy/AutoComments-for-Sublime-Text-2.git
+
+	`git clone git://github.com/soncy/AutoComments-for-Sublime-Text-2.git`
 
 2. 到 [https://github.com/soncy/AutoComments-for-Sublime-Text-2](https://github.com/soncy/AutoComments-for-Sublime-Text-2)下载，解压到Packages目录.
 
