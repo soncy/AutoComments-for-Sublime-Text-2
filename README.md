@@ -20,7 +20,7 @@ Sublime Text2 一键添加注释插件
 
 1. 到你的Sublime Text2 的Packages目录下，运行   
     
-       git clone git://github.com/soncy/AutoComments-for-Sublime-Text-2.git
+        git clone git://github.com/soncy/AutoComments-for-Sublime-Text-2.git
 
 2. 直接下载zip包，解压到Packages目录.
 
