@@ -10,6 +10,11 @@ import time, re
 
 file_type_reg = re.compile('(.*?)\.(css|js|py)$')
 settings      = sublime.load_settings('AutoComments.sublime-settings')
+comments_map  = {
+    'js'  : ['/*', ' * ', ' */'],
+    'css' : ['/*', ' * ', ' */'],
+    'py'  : ['\'\'\'', '    - ', '\'\'\'']
+}
 
 class AutoCommentsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -24,8 +29,7 @@ class AutoCommentsCommand(sublime_plugin.TextCommand):
         return file_type_match.group(2)
 
     def get_data(self):
-        Date = time.strftime('%Y-%m-%d')
-        Time = time.strftime('%H:%M:%S')
+        Date, Time = time.strftime('%Y-%m-%d'), time.strftime('%H:%M:%S')
 
         return {
             "user"    : settings.get("user"),
@@ -35,12 +39,6 @@ class AutoCommentsCommand(sublime_plugin.TextCommand):
         }
     
     def get_comments(self, user_data, file_type):
-
-        comments_map = {
-            'js'  : ['/*', ' * ', ' */'],
-            'css' : ['/*', ' * ', ' */'],
-            'py'  : ['\'\'\'', '    - ', '\'\'\'']
-        }
 
         comments_start = comments_map[file_type][0]
         line_start     = comments_map[file_type][1]
