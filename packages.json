@@ -10,8 +10,8 @@
             "platforms": {
                 "*": [
                     {
-                        "version": "0.1.0",
-                        "url": "https://nodeload.github.com/your_github_username/AutoComments-for-Sublime-Text-2/zip/0.1.0.zip"
+                        "version": "0.1.2",
+                        "url": "https://github.com/soncy/AutoComments-for-Sublime-Text-2/archive/v0.1.2.zip"
                     }
                 ]
             }
