@@ -33,3 +33,10 @@ Packages目录所在位置:
 ### 配置
 
 Preferences -> Package Settings -> AutoComments
+
+配置文件格式：
+
+    {
+        "user": "soncy",
+        "contact": "http://www.qifendi.com"
+    }
